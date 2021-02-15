@@ -1,0 +1,12 @@
+var arr=[[['firstname','madhula'],['lastname','karthikeyan']]];
+function transformIntoObjects(arr){
+    var transform={};
+    for(let i in arr){
+        for(let j in arr[i]){
+            var key=arr[i][j][0];
+            transform[key]=arr[i][j][1];
+        }
+    }
+    console.log(transform);
+}
+transformIntoObjects(arr);
